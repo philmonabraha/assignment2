@@ -256,3 +256,19 @@ A: Yes. The component structure, props with hard-coded tasks, and the styling ne
 ---
 
 *Assignment 1 built this interface. Assignment 2 makes it work.*
+
+## Implementation
+
+The app starts with the five tasks from the mockup. Add tasks with the form, use
+checkboxes to complete or reopen tasks, and use × to delete them. All, Active,
+and Completed filter the list; Quick Find also searches task text. The header
+always counts every task. Tasks live in App state and reset when the page reloads.
+The navigation disappears at 480px and below.
+
+Run with Node 18 or newer: `npm ci`, then `npm run dev`. Run `npm run build`
+for a production build. No additional application dependencies were added.
+
+Validation: production build and Chrome interaction checks passed for adding,
+blank input rejection, trimming, completion and reopening, deletion, filtering,
+search, global counts, empty states, and responsive layouts at 481px, 480px,
+and 375px. The browser reported no console errors or React warnings.
